@@ -18,13 +18,13 @@
 		android:id="@+id/tv_indicator"
 		android:layout_width="wrap_content"
 		android:layout_height="20dp"
-		android:layout_alignParentTop="true"
-		android:layout_centerHorizontal="true"
-		android:layout_marginTop="40dp"
+		android:layout_alignParentBottom="true"
 		android:background="@drawable/shape_indicator_bg"
 		android:gravity="center"
 		android:includeFontPadding="false"
 		android:text="1/9"
+		android:layout_marginLeft="5dp"
+		android:layout_marginBottom="25dp"
 		android:textColor="#ffffff"
 		android:textSize="15sp"
 		/>
@@ -64,20 +64,26 @@
 
 	</FrameLayout>
 
-	<ImageView
-		android:id="@+id/imgCloseButton"
-		android:layout_width="35dp"
-		android:layout_height="35dp"
-		android:layout_alignParentStart="true"
-		android:layout_alignParentLeft="true"
-		android:layout_alignParentBottom="true"
-		android:layout_gravity="bottom|left"
-		android:layout_marginStart="20dp"
-		android:layout_marginLeft="20dp"
-		android:layout_marginBottom="20dp"
-		android:padding="3dp"
-		app:srcCompat="@drawable/ic_action_close"
-		/>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:gravity="center_vertical"
+		android:layout_height="wrap_content">
+		<ImageView
+			android:id="@+id/imgCloseButton"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:scaleType="centerInside"
+			android:padding="3dp"
+			app:srcCompat="@drawable/ic_action_close"
+			/>
+
+		<TextView
+			android:id="@+id/tv_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+
 
 	<ImageView
 		android:id="@+id/img_download"
