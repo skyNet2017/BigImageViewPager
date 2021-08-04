@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     boolean showErrorToast = false;
     private String[] images = {
             // 六种格式的图片
+            "https://i.pinimg.com/originals/99/a0/11/99a01123f4f5ec82d359289b5dee2e8a.gif",
             "https://aloss.11oi.com/app/img/temp/launch_top.bmp",
             "https://aloss.11oi.com/app/img/temp/launch_top.gif",
             "https://aloss.11oi.com/app/img/temp/launch_top.jpeg",
