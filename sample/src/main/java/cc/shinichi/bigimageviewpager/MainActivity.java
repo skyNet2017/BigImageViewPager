@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
     private String[] images = {
             // 六种格式的图片
             "https://i.pinimg.com/originals/99/a0/11/99a01123f4f5ec82d359289b5dee2e8a.gif",
+            "https://i0.zi.org.tw/kocpc/2016/04/1459744720-a86badd1009ab457c3d77cb4f4f12409.gif",
             "https://aloss.11oi.com/app/img/temp/launch_top.bmp",
             "https://aloss.11oi.com/app/img/temp/launch_top.gif",
             "https://aloss.11oi.com/app/img/temp/launch_top.jpeg",
@@ -520,5 +521,10 @@ public class MainActivity extends AppCompatActivity {
                         .start();
             }
         }
+    }
+
+    public void showGif(View view) {
+        startActivity(new Intent(this,GifActivity.class));
+
     }
 }
